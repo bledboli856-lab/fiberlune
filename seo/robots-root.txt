@@ -1,0 +1,6 @@
+# Deploy only at https://bledboli856-lab.github.io/robots.txt.
+# A copy under /fiberlune/ is ignored by crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://bledboli856-lab.github.io/fiberlune/sitemap.xml

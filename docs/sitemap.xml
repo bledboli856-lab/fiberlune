@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bledboli856-lab.github.io/fiberlune/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <image:image>
+      <image:loc>https://bledboli856-lab.github.io/fiberlune/moonlit-garden-rooms-cover-800.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bledboli856-lab.github.io/fiberlune/cozy-crochet-knitting-cover-800.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bledboli856-lab.github.io/fiberlune/cozy-ocean-life-cover-800.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bledboli856-lab.github.io/fiberlune/fiberlune2-moonlit-garden-rooms-sample.pdf</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://bledboli856-lab.github.io/fiberlune/fiberlune-crochet-knitting-sample.pdf</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://bledboli856-lab.github.io/fiberlune/cozy-ocean-life-sample.pdf</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+</urlset>
