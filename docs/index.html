@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f3e9">
-  <meta name="description" content="Discover FIBERLUNE and Moonlit Garden Rooms. A quiet world of color, imagination and moonlit inspiration. Explore the collection on Amazon, Etsy and Apple Books.">
+  <meta name="description" content="Discover FIBERLUNE coloring books, from cozy crochet and knitting to moonlit garden rooms. Explore the collection and find your next creative pause.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FIBERLUNE">
   <meta property="og:title" content="FIBERLUNE — A little moonlight. A world of color.">
-  <meta property="og:description" content="Explore FIBERLUNE 2 — Moonlit Garden Rooms and find your next creative pause.">
-  <title>FIBERLUNE — Moonlit Garden Rooms</title>
+  <meta property="og:description" content="Explore FIBERLUNE coloring books: A Cozy Crochet &amp; Knitting Coloring Book and Moonlit Garden Rooms.">
+  <title>FIBERLUNE — Coloring Books</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e6def0'/%3E%3Cpath d='M42 12a22 22 0 1 0 10 35A21 21 0 0 1 42 12Z' fill='%235d466f'/%3E%3C/svg%3E">
   <style>
     :root{--cream:#f7f3e9;--paper:#fcfaf5;--lavender:#e6def0;--lilac:#cab8dc;--plum:#503b61;--ink:#322b37;--muted:#6c6272;--line:#dcd3df;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
@@ -65,9 +65,11 @@
     h2{font-size:clamp(36px,4.2vw,54px);letter-spacing:-.035em;line-height:1.15;margin-bottom:0}
     .section-aside{font-size:12px;color:var(--muted);max-width:235px;margin:0 0 5px}
     .book{display:grid;grid-template-columns:.9fr 1.1fr;border:1px solid var(--line);background:var(--paper)}
+    .book + .book{margin-top:36px}
     .volume-panel{position:relative;background:var(--lavender);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:465px;padding:45px 30px;overflow:hidden}
     .cover-panel{background:linear-gradient(145deg,#e6def0,#eee7dd);padding:38px;display:grid;place-items:center;min-width:0}
     .book-cover{display:block;width:100%;max-width:300px;height:auto;border-radius:2px;box-shadow:0 13px 30px #4d36532b,2px 2px 0 #bba7c4}
+    .book-cover-square{max-width:380px}
     .book-detail{margin:0 0 21px;color:var(--plum);font-size:10px;letter-spacing:.13em;text-transform:uppercase}
     .volume-frame{position:absolute;inset:25px;border:1px solid #bcaacc;border-radius:180px 180px 0 0}
     .volume-label{position:relative;font-size:9px;letter-spacing:.23em;text-transform:uppercase;color:var(--plum);text-align:center}
@@ -83,6 +85,7 @@
     .purchase-options .arrow{flex-shrink:0}
     .purchase-options .button:disabled{background:var(--lavender);border-color:var(--line);color:var(--muted);cursor:default;transform:none}
     .purchase-options small{display:block;font-size:10px;line-height:1.5;margin-top:3px}
+    .purchase-pending{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin:0;width:100%}
     .about{background:var(--lavender);padding:76px 0}
     .about .wrap{display:grid;grid-template-columns:.65fr 1.15fr 1fr;align-items:center;gap:42px}
     .moon-medallion{width:136px;height:136px;border:1px solid #bdaaca;border-radius:50%;display:grid;place-items:center;position:relative;margin:auto}
@@ -145,7 +148,7 @@
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="heroEyebrow">Welcome to the world of FIBERLUNE</p>
         <h1 id="hero-title"><span data-i18n="heroLine1">A little moonlight.</span><br><em data-i18n="heroLine2">A world of color.</em></h1>
-        <p data-i18n="heroBody">Step away from the everyday. Discover Moonlit Garden Rooms and make a little space for your imagination.</p>
+        <p data-i18n="heroBody">Step away from the everyday. Discover the FIBERLUNE coloring book collection and make a little space for your imagination.</p>
         <a class="button" href="#collection"><span data-i18n="explore">Explore the collection</span><span class="arrow" aria-hidden="true">↗</span></a>
         <div class="hero-bottom" data-i18n="heroFoot">For the unhurried moments.</div>
       </div>
@@ -202,6 +205,18 @@
           </div>
         </div>
       </article>
+      <article class="book" id="cozy-crochet-knitting" aria-labelledby="crochet-book-title">
+        <div class="cover-panel">
+          <img class="book-cover book-cover-square" src="cozy-crochet-knitting-cover.png" alt="FIBERLUNE — A Cozy Crochet &amp; Knitting Coloring Book cover, with cream, coral and green crochet flowers, yarn and a crochet hook" width="2048" height="2048" loading="lazy" decoding="async">
+        </div>
+        <div class="book-copy">
+          <p class="eyebrow">FIBERLUNE</p>
+          <h3 id="crochet-book-title">A Cozy Crochet &amp;<br>Knitting Coloring Book</h3>
+          <p class="book-detail" data-i18n="crochetDetail">45 handmade moments to color</p>
+          <p class="book-description" data-i18n="crochetDescription">A cozy world of crochet and knitting, ready for your favorite colors. Make a little time for a quiet, creative moment.</p>
+          <p class="purchase-pending" data-i18n="purchasePending">Buying options coming soon.</p>
+        </div>
+      </article>
     </section>
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="wrap">
@@ -229,9 +244,10 @@
       'use strict';
       const sq = {
         skip:'Kalo te përmbajtja',announcement:'Një çast qetësie. Pak ngjyra. Një botë e jotja.',mainNav:'Navigimi kryesor',language:'Gjuha',navBooks:'Koleksioni',navAbout:'Bota jonë',navFaq:'Pyetje',
-        heroEyebrow:'Mirë se vjen në botën FIBERLUNE',heroLine1:'Pak dritë hëne.',heroLine2:'Një botë me ngjyra.',heroBody:'Largohu pak nga përditshmëria. Zbulo Moonlit Garden Rooms dhe krijo hapësirë për imagjinatën tënde.',explore:'Zbulo koleksionin',heroFoot:'Për çastet pa nxitim.',artCaption:'Një ftesë për të ngadalësuar',
+        heroEyebrow:'Mirë se vjen në botën FIBERLUNE',heroLine1:'Pak dritë hëne.',heroLine2:'Një botë me ngjyra.',heroBody:'Largohu pak nga përditshmëria. Zbulo koleksionin e librave për ngjyrosje FIBERLUNE dhe krijo hapësirë për imagjinatën tënde.',explore:'Zbulo koleksionin',heroFoot:'Për çastet pa nxitim.',artCaption:'Një ftesë për të ngadalësuar',
         strip1:'Frymëzim nën dritën e hënës',strip2:'Hapësirë për imagjinatën',strip3:'Ngjyros me ritmin tënd',collectionEyebrow:'Koleksioni FIBERLUNE',collectionTitle:'Çasti yt i radhës me ngjyra.',collectionAside:'Pak frymëzim për kohën që ia kushton vetes.',volume:'Vëllimi',
         bookDetail:'Libër për ngjyrosje · 35 skena të qeta për ngjyrosje',bookDescription:'Lëre imagjinatën të shëtisë në një kopsht nën dritën e hënës. Zbulo FIBERLUNE 2 dhe shtoji ngjyrat e tua një çasti të qetë krijues.',platforms:'Platformat e blerjes',etsyAria:'Etsy — hapet në një skedë të re',amazonAria:'Amazon — hapet në një skedë të re',appleAria:'Apple Books — hapet në një skedë të re',comingSoon:'Së shpejti',
+        crochetDetail:'45 motive punimesh dore për ngjyrosje',crochetDescription:'Një botë e ngrohtë me punime me grep dhe thurje, gati për ngjyrat e tua të preferuara. Gjej pak kohë për një çast të qetë krijues.',purchasePending:'Opsionet e blerjes së shpejti.',
         aboutEyebrow:'Bota FIBERLUNE',aboutLine1:'Një ritëm më i qetë.',aboutLine2:'Një hapësirë për të krijuar.',aboutBody1:'Një filxhan çaj. Një ngjyrë e dashur. Një çast që të përket ty.',aboutBody2:'FIBERLUNE është një ftesë për t’i bërë vend imagjinatës. Lëre ditën të qetësohet, ndiq kureshtjen dhe shiko ku të çojnë ngjyrat.',
         faqEyebrow:'Disa detaje të dobishme',faqTitle:'Para se të fillosh.',faqIntro:'Zbulo koleksionin, zgjidh librin tënd të radhës dhe bëje tëndin.',q1:'Ku mund ta gjej Moonlit Garden Rooms?',a1:'Gjeje FIBERLUNE 2 — Moonlit Garden Rooms në Amazon, Etsy dhe Apple Books përmes lidhjeve te koleksioni. Së shpejti edhe në Google Play Books.',viewRetailers:'Shiko mundësitë e blerjes →',q2:'Ku mund ta kontrolloj formatin dhe çmimin?',a2:'Para blerjes, kontrollo faqen e produktit në platformën e zgjedhur për formatin, përmbajtjen, çmimin aktual dhe disponueshmërinë.',q3:'A bëhet blerja drejtpërdrejt në këtë website?',a3:'Blerja kryhet në platformën shitëse. Lidhjet për Amazon, Etsy dhe Apple Books hapen në një skedë të re, ku mund të shohësh detajet dhe të përfundosh blerjen.',
         closingEyebrow:'Gjej pak kohë për veten',closingTitle:'Lëre imagjinatën të lulëzojë.',backCollection:'Gjej çastin tënd krijues',footerTagline:'Pak dritë hëne. Një botë me ngjyra.',rights:'Të gjitha të drejtat e rezervuara.',backTop:'Kthehu lart'
