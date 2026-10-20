@@ -85,6 +85,10 @@
     .purchase-options .arrow{flex-shrink:0}
     .purchase-options .button:disabled{background:var(--lavender);border-color:var(--line);color:var(--muted);cursor:default;transform:none}
     .purchase-options small{display:block;font-size:10px;line-height:1.5;margin-top:3px}
+    .sample-button{width:100%;background:transparent;color:var(--plum)}
+    .sample-button:hover{background:var(--lavender)}
+    .purchase-options + .sample-button{margin-top:14px}
+    .sample-button + .purchase-pending{margin-top:18px;border-top:0;padding-top:0}
     .purchase-pending{font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin:0;width:100%}
     .about{background:var(--lavender);padding:76px 0}
     .about .wrap{display:grid;grid-template-columns:.65fr 1.15fr 1fr;align-items:center;gap:42px}
@@ -203,6 +207,7 @@
             <a class="button" href="https://apple.co/3VXbKch" target="_blank" rel="noopener noreferrer" aria-label="Apple Books — opens in a new tab" data-i18n-aria="appleAria"><span>Apple Books</span><span class="arrow" aria-hidden="true">↗</span></a>
             <button class="button" type="button" disabled><span>Google Play Books<small data-i18n="comingSoon">Coming soon</small></span></button>
           </div>
+          <a class="button sample-button" href="fiberlune2-moonlit-garden-rooms-sample.pdf" download="FIBERLUNE2_Moonlit_Garden_Rooms_Sample.pdf" aria-label="Download Moonlit Garden Rooms sample (PDF)" data-i18n-aria="gardenSampleAria"><span data-i18n="downloadSample">Download Sample</span><span class="arrow" aria-hidden="true">↓</span></a>
         </div>
       </article>
       <article class="book" id="cozy-crochet-knitting" aria-labelledby="crochet-book-title">
@@ -214,6 +219,7 @@
           <h3 id="crochet-book-title">A Cozy Crochet &amp;<br>Knitting Coloring Book</h3>
           <p class="book-detail" data-i18n="crochetDetail">45 handmade moments to color</p>
           <p class="book-description" data-i18n="crochetDescription">A cozy world of crochet and knitting, ready for your favorite colors. Make a little time for a quiet, creative moment.</p>
+          <a class="button sample-button" href="fiberlune-crochet-knitting-sample.pdf" download="FIBERLUNE_Crochet_Knitting_Sample.pdf" aria-label="Download A Cozy Crochet &amp; Knitting Coloring Book sample (PDF)" data-i18n-aria="crochetSampleAria"><span data-i18n="downloadSample">Download Sample</span><span class="arrow" aria-hidden="true">↓</span></a>
           <p class="purchase-pending" data-i18n="purchasePending">Buying options coming soon.</p>
         </div>
       </article>
@@ -226,6 +232,7 @@
           <h3 id="ocean-book-title">Cozy Ocean Life</h3>
           <p class="book-detail" data-i18n="oceanDetail">50 cozy sea life adventures</p>
           <p class="book-description" data-i18n="oceanDescription">A little seaside escape, filled with cozy moments and ocean inspiration. Bring your favorite colors to a world by the sea.</p>
+          <a class="button sample-button" href="cozy-ocean-life-sample.pdf" download="Cozy_Ocean_Life_Sample.pdf" aria-label="Download Cozy Ocean Life sample (PDF)" data-i18n-aria="oceanSampleAria"><span data-i18n="downloadSample">Download Sample</span><span class="arrow" aria-hidden="true">↓</span></a>
           <p class="purchase-pending" data-i18n="purchasePending">Buying options coming soon.</p>
         </div>
       </article>
@@ -259,6 +266,7 @@
         heroEyebrow:'Mirë se vjen në botën FIBERLUNE',heroLine1:'Pak dritë hëne.',heroLine2:'Një botë me ngjyra.',heroBody:'Largohu pak nga përditshmëria. Zbulo koleksionin e librave për ngjyrosje FIBERLUNE dhe krijo hapësirë për imagjinatën tënde.',explore:'Zbulo koleksionin',heroFoot:'Për çastet pa nxitim.',artCaption:'Një ftesë për të ngadalësuar',
         strip1:'Frymëzim nën dritën e hënës',strip2:'Hapësirë për imagjinatën',strip3:'Ngjyros me ritmin tënd',collectionEyebrow:'Koleksioni FIBERLUNE',collectionTitle:'Çasti yt i radhës me ngjyra.',collectionAside:'Pak frymëzim për kohën që ia kushton vetes.',volume:'Vëllimi',
         bookDetail:'Libër për ngjyrosje · 35 skena të qeta për ngjyrosje',bookDescription:'Lëre imagjinatën të shëtisë në një kopsht nën dritën e hënës. Zbulo FIBERLUNE 2 dhe shtoji ngjyrat e tua një çasti të qetë krijues.',platforms:'Platformat e blerjes',etsyAria:'Etsy — hapet në një skedë të re',amazonAria:'Amazon — hapet në një skedë të re',appleAria:'Apple Books — hapet në një skedë të re',comingSoon:'Së shpejti',
+        downloadSample:'Shkarko mostrën',gardenSampleAria:'Shkarko mostrën e Moonlit Garden Rooms (PDF)',crochetSampleAria:'Shkarko mostrën e A Cozy Crochet & Knitting Coloring Book (PDF)',oceanSampleAria:'Shkarko mostrën e Cozy Ocean Life (PDF)',
         crochetDetail:'45 motive punimesh dore për ngjyrosje',crochetDescription:'Një botë e ngrohtë me punime me grep dhe thurje, gati për ngjyrat e tua të preferuara. Gjej pak kohë për një çast të qetë krijues.',purchasePending:'Opsionet e blerjes së shpejti.',
         oceanEyebrow:'Libër për ngjyrosje',oceanDetail:'50 aventura të qeta pranë detit',oceanDescription:'Një arratisje e vogël pranë detit, me çaste të qeta dhe frymëzim nga oqeani. Shto ngjyrat e tua të preferuara në këtë botë bregdetare.',
         aboutEyebrow:'Bota FIBERLUNE',aboutLine1:'Një ritëm më i qetë.',aboutLine2:'Një hapësirë për të krijuar.',aboutBody1:'Një filxhan çaj. Një ngjyrë e dashur. Një çast që të përket ty.',aboutBody2:'FIBERLUNE është një ftesë për t’i bërë vend imagjinatës. Lëre ditën të qetësohet, ndiq kureshtjen dhe shiko ku të çojnë ngjyrat.',
