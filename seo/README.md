@@ -24,3 +24,34 @@ Original PNG covers are retained unchanged. The page serves 400px and 800px WebP
 - https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
 - https://support.google.com/webmasters/answer/9008080
 - https://schema.org/Book
+
+## Audit results — 2026-10-20
+
+Deployed code commit: ba829dccf837b49c19afb2252ef7af8bf5f83ed5. GitHub Pages run 39455218059 completed successfully. The stylesheet was compared before/after and is identical. All existing purchase and sample anchors were preserved.
+
+| Check | Result |
+| --- | --- |
+| Mobile Lighthouse | Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 0.8 s, TBT 0 ms, CLS 0 |
+| Desktop Lighthouse | Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 0.2 s, TBT 0 ms, CLS 0 |
+| Real-user performance data | No CrUX field data available yet; the scores above are laboratory results |
+| Desktop layout | All three covers loaded; no horizontal overflow observed |
+| Mobile layout | Existing responsive CSS preserved and reviewed; PageSpeed mobile emulation passed. No separate manual device-width session was available |
+| English/Albanian | Page title, description, image alternatives and all three sample labels verified after switching language |
+| Free PDF samples | All three actual downloads completed and were byte-for-byte equal to the original PDFs |
+| Moonlit Garden Rooms purchases | Etsy and Apple Books destinations verified; Amazon URL retained, destination inspection blocked by browser policy; Google still intentionally coming soon |
+| Crochet & Knitting purchases | No purchase URLs were supplied; existing coming-soon note retained |
+| Cozy Ocean Life purchases | Etsy, Apple Books and Google Play destinations verified; Amazon URL retained, destination inspection blocked by browser policy |
+| Search Console ownership | URL-prefix property verified successfully using the homepage HTML meta tag |
+| Sitemap publication | Public HTTPS response 200 with application/xml; valid XML containing 4 URLs and 3 image references |
+| Sitemap submission | Submitted successfully, then resubmitted once after diagnostics; report still showed Couldn't fetch at the end of the audit |
+| Google live sitemap test | URL is available to Google; Page fetch Successful. Initial report fetch error remains unresolved; do not describe sitemap processing or indexing as successful yet |
+
+Performance report: https://pagespeed.web.dev/analysis/https-bledboli856-lab-github-io-fiberlune/rr8vx05v7o?form_factor=mobile
+
+Search Console sitemap report: https://search.google.com/search-console/sitemaps?resource_id=https%3A%2F%2Fbledboli856-lab.github.io%2Ffiberlune%2F
+
+Google documents that failed sitemap fetches are retried for a few days. If the error remains, revisit the report and live URL test before making changes: https://support.google.com/webmasters/answer/7451001
+
+### Remaining input or permission
+
+No additional authorization is needed for the published changes or the verified Search Console property. An effective host-root robots.txt would require approval to create or modify a separate root-host GitHub Pages repository; the prepared template is optional and crawling is not blocked by its absence. The owner still needs to supply purchase URLs for Crochet & Knitting and the Moonlit Garden Rooms Google Play link. Amazon availability needs manual confirmation in an ordinary browser.
